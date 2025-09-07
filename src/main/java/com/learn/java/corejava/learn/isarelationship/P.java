@@ -24,7 +24,7 @@ class Test{
 		P p1= new C();
 		p1.m1();
 		//p1.m2();
-		//C c1= new P();
+		//C c1= new ImplicitConstructorChainingCase1();
 	}
 }
 
