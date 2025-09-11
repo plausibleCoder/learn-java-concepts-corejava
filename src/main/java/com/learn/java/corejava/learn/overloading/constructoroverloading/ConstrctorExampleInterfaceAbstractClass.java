@@ -6,10 +6,33 @@ public class ConstrctorExampleInterfaceAbstractClass {
 
 }
 
-class TestClass{
+class TestClass implements TestInterface{
 	TestClass(){
 		
 	}
+
+	@Override
+	public int checkBalance(int i, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int SubtractBalance(int i, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int UpdatetBalance(int i, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+	
+	
 }
 
 abstract class TestAbstract{
@@ -22,4 +45,13 @@ interface TestInterface{
 	//TestInterface(){
 		
 	//}
+	private int add(int i, int b) {
+		return i+b;
+	}
+	
+	public int checkBalance(int i, int b);
+	public int SubtractBalance(int i, int b);
+	public int UpdatetBalance(int i, int b);
+	
+	
 }

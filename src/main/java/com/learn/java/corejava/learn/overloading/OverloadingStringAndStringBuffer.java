@@ -20,7 +20,7 @@ public class OverloadingStringAndStringBuffer {
 		 This leads to a compilation error, specifically: The method m1(String) is ambiguous for the type OverloadingStringAndStringBuffer
 		 */
 		// Fixes the ambiguity by casting null to String
-		t.m1((String) null); // Will call "String version"
+		//t.m1(null); // Will call "String version"
 
 		// Fixes the ambiguity by casting null to StringBuffer
 		t.m1((StringBuffer) null); // Will call "String Buffer Version"

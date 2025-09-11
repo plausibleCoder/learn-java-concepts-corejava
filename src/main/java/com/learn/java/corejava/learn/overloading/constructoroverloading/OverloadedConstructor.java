@@ -2,6 +2,9 @@ package com.learn.java.corejava.learn.overloading.constructoroverloading;
 
 public class OverloadedConstructor {
 
+	//OverloadedConstructor obj1 = new OverloadedConstructor(10);
+	
+
 	/*
 	 this(): The keyword this() is used inside a constructor to explicitly call another overloaded constructor of the same class. 
 	 This is called constructor chaining.
@@ -12,6 +15,7 @@ public class OverloadedConstructor {
 	OverloadedConstructor(){
 		this(10);
 		System.out.println("no args");
+		//System.out.println("Grishma");
 	}
 	
 	OverloadedConstructor(int i){

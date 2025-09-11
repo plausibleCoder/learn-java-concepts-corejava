@@ -29,6 +29,7 @@ class C extends P{
 	C(){
 		super();
 	}
+	
 }
 
 

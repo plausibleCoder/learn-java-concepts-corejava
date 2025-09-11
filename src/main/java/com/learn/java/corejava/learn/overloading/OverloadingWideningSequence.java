@@ -7,7 +7,7 @@ char → int → long → float → double
 Floating-Point Widening:
 float → double
  */
-public class OverloadingWideningSequence {
+public class OverloadingWideningSequence  {
 
 	public static void main(String[] args) {
 		Test t = new Test();
