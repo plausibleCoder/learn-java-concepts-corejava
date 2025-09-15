@@ -6,6 +6,9 @@ public class Test1 {
 class A
 {
 	private int x=10;
+	public void add() {
+		int z = x+20;
+	}
 	
 }
 //Not Tightly encapsulated

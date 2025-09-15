@@ -1,8 +1,6 @@
 package com.learn.java.corejava.learn.isarelationship;
 
 public class P{
-
-
 	public void m1 () {
 		System.out.println("parent");
 	}
@@ -24,7 +22,9 @@ class Test{
 		P p1= new C();
 		p1.m1();
 		//p1.m2();
-		//C c1= new ImplicitConstructorChainingCase1();
+		C c1= new C();
+		c1.m1();
+		c1.m2();
 	}
 }
 
