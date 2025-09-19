@@ -1,39 +1,42 @@
 package com.learn.java.corejava.learn.collectionframework.collection.set;
 
 import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class SetDemo {
-
+    /*
+    The Set interface extends Collection.
+    It represents a collection that contains no duplicate elements.
+    It does not guarantee the order of its elements.
+    Common implementations are HashSet, LinkedHashSet, and TreeSet.
+    */
     public static void main(String[] args) {
-        // --- HashSet: No insertion order guarantee, fast operations ---
-        System.out.println("--- HashSet Demonstration ---");
+        System.out.println("--- Demonstrating the Set interface ---");
+
+        // 1. HashSet Demo (no order guarantee, fast access)
+        System.out.println("\n--- HashSet: Unordered, fast access ---");
         Set<String> hashSet = new HashSet<>();
         hashSet.add("Apple");
         hashSet.add("Banana");
-        hashSet.add("Orange");
-        hashSet.add("Apple"); // Adding a duplicate, which will be ignored
-        System.out.println("HashSet (order not guaranteed): " + hashSet);
-        System.out.println("Contains 'Banana'? " + hashSet.contains("Banana"));
-        hashSet.remove("Apple");
-        System.out.println("HashSet after removing 'Apple': " + hashSet);
+        hashSet.add("Apple"); // Adding a duplicate, which is ignored
+        hashSet.add("Cherry");
+        System.out.println("HashSet: " + hashSet); // Order is not guaranteed
 
-        // --- LinkedHashSet: Maintains insertion order ---
-        System.out.println("\n--- LinkedHashSet Demonstration ---");
+        // 2. LinkedHashSet Demo (maintains insertion order)
+        System.out.println("\n--- LinkedHashSet: Maintains insertion order ---");
         Set<String> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add("Apple");
         linkedHashSet.add("Banana");
-        linkedHashSet.add("Orange");
-        System.out.println("LinkedHashSet (insertion order): " + linkedHashSet);
+        linkedHashSet.add("Apple");
+        linkedHashSet.add("Cherry");
+        System.out.println("LinkedHashSet: " + linkedHashSet); // Order is preserved
 
-        // --- TreeSet: Elements are sorted in natural order ---
-        System.out.println("\n--- TreeSet Demonstration ---");
-        Set<String> treeSet = new TreeSet<>();
-        treeSet.add("Banana");
-        treeSet.add("Apple");
-        treeSet.add("Orange");
-        System.out.println("TreeSet (sorted order): " + treeSet);
+        // 3. Common Set operations
+        System.out.println("\n--- Common Set Operations ---");
+        System.out.println("Size of HashSet: " + hashSet.size());
+        System.out.println("Does HashSet contain 'Banana'? " + hashSet.contains("Banana"));
+        hashSet.remove("Apple");
+        System.out.println("HashSet after removing 'Apple': " + hashSet);
     }
 }
