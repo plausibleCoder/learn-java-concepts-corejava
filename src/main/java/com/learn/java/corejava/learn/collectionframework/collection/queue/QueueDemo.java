@@ -4,6 +4,19 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class QueueDemo {
+	/*
+	 First-In, First-Out (FIFO): The fundamental concept of a Queue is that the first element added to it is the first one to be removed. Elements are inserted at the back ("rear" or "tail") and removed from the front ("head").
+Interface, not class: Queue is an interface in the java.util package, so you cannot create an instance of it directly. Instead, you must use a concrete class that implements the Queue interface, such as LinkedList or ArrayDeque.
+No random access: Unlike a List, a Queue does not support random access by index. You can only interact with the elements at the head and tail.
+
+	Common use cases
+Queues are ideal for managing items that need to be processed in a specific, sequential order.
+Task scheduling: Operating systems and web servers use queues to manage processes and incoming requests.
+Producer-Consumer pattern: A Queue acts as a safe buffer between one or more "producer" threads that add data and "consumer" threads that process it. A BlockingQueue is often used for this pattern.
+Event handling: Applications use queues to process events in the order they occur.
+Breadth-First Search (BFS): This graph traversal algorithm uses a queue to explore nodes level by level.
+
+*/
 
     public static void main(String[] args) {
         System.out.println("Demonstrating Queue using LinkedList implementation.");
