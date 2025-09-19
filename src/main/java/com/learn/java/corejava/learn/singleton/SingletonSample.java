@@ -1,6 +1,16 @@
 package com.learn.java.corejava.learn.singleton;
 
+class Check{
+	
+}
+
 public class SingletonSample {
+	
+//	Check c = new Check();
+//	Check c1 = new Check();
+//	Check c2 = new Check();
+//	Check c3 = new Check();
+	
 	public static void main(String[] args) {
 		//Example of a singleton class 
 		Runtime r1= Runtime.getRuntime();

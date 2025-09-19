@@ -18,7 +18,7 @@ public class OverloadingWideningSequence  {
 		 */
 		t.m1(10);
 		t.m1(10.5f);
-		t.m1('a');
+		t.m1('A');
 		/*
 		 Explanation: The Test class has no m1(char) method. However,
 		  char can be automatically promoted (widened) to int because it is a smaller data type.
@@ -34,6 +34,7 @@ public class OverloadingWideningSequence  {
 		 */
 		
 		//t.m1(10.5);
+		int j = 100/5;
 	}
 
 }

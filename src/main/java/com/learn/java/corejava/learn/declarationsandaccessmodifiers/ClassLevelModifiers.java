@@ -2,7 +2,7 @@ package com.learn.java.corejava.learn.declarationsandaccessmodifiers;
 
 public class ClassLevelModifiers {
 
-	public static void main(String[] args) {
+	 static void main(String[] args) {
 
 		//public private protected final
 		 

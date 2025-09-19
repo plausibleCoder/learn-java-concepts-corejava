@@ -28,7 +28,6 @@ class TestClass implements TestInterface{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	
 	
 	
@@ -39,6 +38,10 @@ abstract class TestAbstract{
 	TestAbstract(){
 		
 	}
+	
+	 abstract int checkBalance(int i, int b);
+	public abstract int SubtractBalance(int i, int b);
+	public abstract int UpdatetBalance(int i, int b);
 }
 
 interface TestInterface{
