@@ -9,6 +9,8 @@ public class VectorDemo {
     Because of its synchronization overhead, it is generally slower than ArrayList.
     It is recommended to use ArrayList unless thread-safety is required.
     */
+	
+	
     public static void main(String[] args) {
         System.out.println("--- Demonstrating the Vector class ---");
 
