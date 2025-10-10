@@ -6,6 +6,7 @@ import java.util.List;
 public class ListDemo {
     public static void main(String[] args) {
         // Creating a List using ArrayList
+    	
         List<String> names = new ArrayList<>();
         
         // add(E e): Adds an element to the end of the list
