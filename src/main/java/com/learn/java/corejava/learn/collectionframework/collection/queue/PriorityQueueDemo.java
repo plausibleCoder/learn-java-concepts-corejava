@@ -23,7 +23,19 @@ public class PriorityQueueDemo {
         numberPriorityQueue.offer(20);
         numberPriorityQueue.offer(1);
         System.out.println("Initial PriorityQueue: " + numberPriorityQueue); // Internal order is not guaranteed for printing
-
+       /* Initial PriorityQueue: [1, 5, 20, 10]
+        		offer(10): PriorityQueue adds 10. The queue looks like [10].
+        		offer(5): 5 is added and bubbles up, becoming the new 
+	        		root because it has a higher priority (lower value). 
+	        		The queue becomes [5, 10].
+        		offer(20): 20 is added. The queue becomes [5, 10, 20].
+        		offer(1): 1 is added and bubbles up to the root. 
+	        		The queue becomes [1, 5, 20, 10]. 
+	        		This is a valid heap structure, but not a sorted array.
+        */
+        
+        
+        
         // 2. Polling elements (retrieves and removes head)
         // Note that it always retrieves the highest priority element (smallest in this case).
         System.out.println("Polling (highest priority): " + numberPriorityQueue.poll());
