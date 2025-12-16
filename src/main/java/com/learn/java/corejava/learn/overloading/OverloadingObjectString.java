@@ -1,5 +1,7 @@
 package com.learn.java.corejava.learn.overloading;
 
+import java.util.ArrayList;
+
 public class OverloadingObjectString {
 	
 	public void m1(String s) {
@@ -10,7 +12,19 @@ public class OverloadingObjectString {
 	public void m1(Object o) {
 		System.out.println("Object version");
 	}
+	
+	int [] arr = {1,2,3,4,67};
+	
+	
+	
+	
 	public static void main(String[] args) {
+		
+		ArrayList list = new ArrayList();
+		list.add(1);
+		list.add("Teja");
+		list.add(45.7);
+		System.out.println(list);
 	
 		
 		OverloadingObjectString t = new OverloadingObjectString();

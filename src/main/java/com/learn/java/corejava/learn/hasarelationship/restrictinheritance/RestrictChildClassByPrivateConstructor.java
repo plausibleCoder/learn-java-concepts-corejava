@@ -11,14 +11,19 @@ public class RestrictChildClassByPrivateConstructor {
 //	It doesn't give a compile-time error because the code, as you have written it, is incomplete. 
 //	The Java compiler will produce an error as soon as you actually try to create an instance of C
 	class P{
-		private P() {
-			
+		P() {
+			super();
 		}
 	}
 	class C extends P{
 		C(){
 			super();
 		}
+	}
+	
+	
+	class Teja{
+		
 	}
 
 }

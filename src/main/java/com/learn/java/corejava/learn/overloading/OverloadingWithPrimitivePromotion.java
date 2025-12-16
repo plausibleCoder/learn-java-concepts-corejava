@@ -29,6 +29,9 @@ the compiler produces an error stating that the method is not applicable for the
 		
 	}
 	
+	//public int t=0, float d=0, double r=0, long y=0, char c='r';
+	//public String st="jhvbjh";
+	
 	public void m1(int i, float f) {
 		System.out.println("int - float vesion");
 	}

@@ -34,7 +34,7 @@ public class OverloadingWideningSequence  {
 		 */
 		
 		//t.m1(10.5);
-		int j = 100/5;
+		//int j = 100/5;
 	}
 
 }

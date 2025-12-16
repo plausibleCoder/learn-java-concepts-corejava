@@ -24,6 +24,8 @@ public class OverloadingStringAndStringBuffer {
 
 		// Fixes the ambiguity by casting null to StringBuffer
 		t.m1((StringBuffer) null); // Will call "String Buffer Version"
+		
+		//int g = 4/0;
 	}
 	
 	public void m1(String s) {
@@ -34,6 +36,11 @@ public class OverloadingStringAndStringBuffer {
 		System.out.println("String Buffer Version");
 		
 	}
+	
+
+	
+	
+	
 	
 
 }
